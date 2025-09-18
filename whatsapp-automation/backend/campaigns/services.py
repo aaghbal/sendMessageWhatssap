@@ -164,7 +164,8 @@ class CampaignExecutionService:
         recipients = [msg.recipient_phone for msg in pending_messages]
         message_content = campaign.message_template.content
         
-        # Use the improved bulk messaging from your sc.py
+        # Use the improved bulk messaging with automatic session recreation
+        logger.info(f"Sending bulk messages to {len(recipients)} recipients via WhatsApp Web")
         results = self.whatsapp_web_service.send_bulk_messages(recipients, message_content)
         
         # Update campaign messages with results

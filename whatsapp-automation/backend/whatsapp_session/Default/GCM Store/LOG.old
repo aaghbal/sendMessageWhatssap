@@ -1,3 +1,2 @@
-2025/09/17-22:39:59.384 94c88 Reusing MANIFEST /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/GCM Store/MANIFEST-000001
-2025/09/17-22:39:59.385 94c88 Recovering log #3
-2025/09/17-22:39:59.385 94c88 Reusing old log /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/GCM Store/000003.log 
+2025/09/18-16:51:18.672 c92d0 Creating DB /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/GCM Store since it was missing.
+2025/09/18-16:51:18.674 c92d0 Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/GCM Store/MANIFEST-000001

@@ -1,3 +1,2 @@
-2025/09/17-22:39:55.964 94ca5 Reusing MANIFEST /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Session Storage/MANIFEST-000001
-2025/09/17-22:39:55.968 94ca5 Recovering log #3
-2025/09/17-22:39:55.970 94ca5 Reusing old log /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Session Storage/000003.log 
+2025/09/18-16:51:09.793 c92fd Creating DB /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Session Storage since it was missing.
+2025/09/18-16:51:09.797 c92fd Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Session Storage/MANIFEST-000001

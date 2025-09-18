@@ -1,3 +1,2 @@
-2025/09/17-22:39:55.768 94c88 Reusing MANIFEST /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Site Characteristics Database/MANIFEST-000001
-2025/09/17-22:39:55.785 94c88 Recovering log #3
-2025/09/17-22:39:55.786 94c88 Reusing old log /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Site Characteristics Database/000003.log 
+2025/09/18-16:51:09.674 c92df Creating DB /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Site Characteristics Database since it was missing.
+2025/09/18-16:51:09.680 c92df Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Site Characteristics Database/MANIFEST-000001

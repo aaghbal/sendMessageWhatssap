@@ -1,25 +1,8 @@
-[611229:611243:0917/224155.589307:ERROR:base/files/file_path_watcher_inotify.cc:337] inotify_init() failed: Too many open files (24)
-[611229:611229:0917/224155.679793:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
-[611265:611279:0917/224155.829922:ERROR:base/files/file_path_watcher_inotify.cc:337] inotify_init() failed: Too many open files (24)
-[611263:611263:0917/224155.914804:WARNING:sandbox/policy/linux/sandbox_linux.cc:415] InitializeSandbox() called with multiple threads in process gpu-process.
-[611229:611229:0917/224156.853119:INFO:CONSOLE:115] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/y2/r/SjwKzCAxiaC.js (115)
-[611229:611229:0917/224156.957991:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[611229:611229:0917/224205.763203:INFO:CONSOLE:77] "ErrorUtils caught an error:
-
-Converting to a string will drop content data. Hash="undefined" Translation="{user_name} added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"212639625639@c.us","type":"in","statusMute":false,"textStatusLastUpdateTime":-1,"syncToAddressbook":false},"showNotifyName":true,"elevatedPushNamesEnabled":true,"onClick":null}}" (type=object,Object)
-
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yW/r/viHqVFvzl0J.js (77)
-[611229:611229:0917/224208.235571:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[611229:611229:0917/224217.159932:INFO:CONSOLE:77] "ErrorUtils caught an error:
-
-Converting to a string will drop content data. Hash="undefined" Translation="{user_name} added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"212639625639@c.us","type":"in","statusMute":false,"textStatusLastUpdateTime":-1,"syncToAddressbook":false},"showNotifyName":true,"elevatedPushNamesEnabled":true,"onClick":null}}" (type=object,Object)
-
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yW/r/viHqVFvzl0J.js (77)
-[611229:611246:0917/224223.803008:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
-[611229:611229:0917/224236.804612:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[611229:611229:0917/224244.567776:INFO:CONSOLE:77] "ErrorUtils caught an error:
-
-Converting to a string will drop content data. Hash="undefined" Translation="{user_name} added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"212639625639@c.us","type":"in","statusMute":false,"textStatusLastUpdateTime":-1,"syncToAddressbook":false},"showNotifyName":true,"elevatedPushNamesEnabled":true,"onClick":null}}" (type=object,Object)
-
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yW/r/viHqVFvzl0J.js (77)
-[611229:611246:0917/224251.554431:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[824963:824963:0918/165144.042643:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[824997:824997:0918/165144.099920:WARNING:sandbox/policy/linux/sandbox_linux.cc:415] InitializeSandbox() called with multiple threads in process gpu-process.
+[824963:824963:0918/165144.189379:INFO:CONSOLE:31] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome://resources/roboto/roboto-regular.woff2", source: chrome://new-tab-page/ (31)
+[824963:824963:0918/165144.716579:INFO:CONSOLE:115] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yp/r/KTri5RY9eXJ.js (115)
+[824963:824963:0918/165144.766790:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[824963:824981:0918/165147.628454:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[824963:824963:0918/165155.716198:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[824963:824981:0918/165210.276717:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

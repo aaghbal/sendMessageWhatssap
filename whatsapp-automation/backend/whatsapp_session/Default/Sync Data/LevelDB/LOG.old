@@ -1,3 +1,2 @@
-2025/09/17-22:39:55.744 94c88 Reusing MANIFEST /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Sync Data/LevelDB/MANIFEST-000001
-2025/09/17-22:39:55.753 94c88 Recovering log #3
-2025/09/17-22:39:55.754 94c88 Reusing old log /home/abdo/Desktop/saasEco/whatsapp-automation/backend/whatsapp_session/Default/Sync Data/LevelDB/000003.log 
+2025/09/18-16:51:09.657 c92ce Creating DB /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Sync Data/LevelDB since it was missing.
+2025/09/18-16:51:09.662 c92ce Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Sync Data/LevelDB/MANIFEST-000001

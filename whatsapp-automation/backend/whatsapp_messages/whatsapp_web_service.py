@@ -13,6 +13,7 @@ import time
 import urllib.parse
 import logging
 import os
+import shutil
 from django.conf import settings
 
 logger = logging.getLogger(__name__)
@@ -82,23 +83,73 @@ class WhatsAppWebService:
                     try:
                         qr_code = driver.find_element(By.CSS_SELECTOR, "[data-testid='qr-code']")
                         if qr_code:
-                            logger.error("WhatsApp Web QR code found - session not logged in")
+                            logger.warning("WhatsApp Web session expired. Attempting to recreate...")
+                            driver.quit()
+                            
+                            # Attempt to recreate the session automatically
+                            success = self._recreate_session_automatically()
+                            if not success:
+                                return {
+                                    'success': False,
+                                    'message_sid': None,
+                                    'status': 'failed',
+                                    'error': 'WhatsApp Web session expired and auto-recreation failed. Please run: python manage.py setup_whatsapp --force'
+                                }
+                            
+                            # Try again with new session
+                            driver = webdriver.Chrome(service=service, options=options)
+                            driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+                            driver.get('https://web.whatsapp.com')
+                            time.sleep(10)
+                            
+                            try:
+                                WebDriverWait(driver, 20).until(
+                                    EC.presence_of_element_located((By.ID, "side"))
+                                )
+                                logger.info("WhatsApp Web session recreated successfully!")
+                            except:
+                                return {
+                                    'success': False,
+                                    'message_sid': None,
+                                    'status': 'failed',
+                                    'error': 'WhatsApp Web session could not be restored'
+                                }
+                    except:
+                        pass
+                    
+                    if 'qr_code' not in locals():
+                        logger.warning(f"WhatsApp Web session check failed: {str(session_error)}")
+                        logger.info("Attempting to recreate session...")
+                        driver.quit()
+                        
+                        # Attempt to recreate the session automatically
+                        success = self._recreate_session_automatically()
+                        if not success:
                             return {
                                 'success': False,
                                 'message_sid': None,
                                 'status': 'failed',
-                                'error': 'WhatsApp Web session expired. Please scan QR code first using: python manage.py setup_whatsapp'
+                                'error': f'WhatsApp Web session not active and auto-recreation failed: {str(session_error)}'
                             }
-                    except:
-                        pass
-                    
-                    logger.error(f"WhatsApp Web session check failed: {str(session_error)}")
-                    return {
-                        'success': False,
-                        'message_sid': None,
-                        'status': 'failed',
-                        'error': f'WhatsApp Web session not active: {str(session_error)}'
-                    }
+                        
+                        # Try again with new session
+                        driver = webdriver.Chrome(service=service, options=options)
+                        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+                        driver.get('https://web.whatsapp.com')
+                        time.sleep(10)
+                        
+                        try:
+                            WebDriverWait(driver, 20).until(
+                                EC.presence_of_element_located((By.ID, "side"))
+                            )
+                            logger.info("WhatsApp Web session recreated successfully!")
+                        except:
+                            return {
+                                'success': False,
+                                'message_sid': None,
+                                'status': 'failed',
+                                'error': 'WhatsApp Web session could not be restored'
+                            }
                 
                 # Open chat with encoded message
                 encoded_message = urllib.parse.quote(message_content)
@@ -293,17 +344,47 @@ class WhatsAppWebService:
                 )
                 logger.info("WhatsApp Web session is active for bulk sending")
             except:
-                logger.error("WhatsApp Web session expired. Please run setup again.")
-                # Return failed results for all recipients
-                for phone_number in recipients:
-                    results.append({
-                        'success': False,
-                        'message_sid': None,
-                        'status': 'failed',
-                        'error': 'WhatsApp Web session not active',
-                        'recipient': phone_number
-                    })
-                return results
+                logger.warning("WhatsApp Web session expired. Attempting to recreate session...")
+                driver.quit()
+                
+                # Attempt to recreate the session automatically
+                success = self._recreate_session_automatically()
+                if not success:
+                    logger.error("Failed to recreate WhatsApp Web session automatically.")
+                    # Return failed results for all recipients
+                    for phone_number in recipients:
+                        results.append({
+                            'success': False,
+                            'message_sid': None,
+                            'status': 'failed',
+                            'error': 'WhatsApp Web session expired and auto-recreation failed. Please run setup manually.',
+                            'recipient': phone_number
+                        })
+                    return results
+                
+                # Try again with new session
+                try:
+                    driver = webdriver.Chrome(service=service, options=options)
+                    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+                    driver.get('https://web.whatsapp.com')
+                    time.sleep(10)
+                    
+                    WebDriverWait(driver, 20).until(
+                        EC.presence_of_element_located((By.ID, "side"))
+                    )
+                    logger.info("WhatsApp Web session recreated successfully!")
+                except:
+                    logger.error("WhatsApp Web session still not active after recreation attempt.")
+                    # Return failed results for all recipients
+                    for phone_number in recipients:
+                        results.append({
+                            'success': False,
+                            'message_sid': None,
+                            'status': 'failed',
+                            'error': 'WhatsApp Web session could not be restored',
+                            'recipient': phone_number
+                        })
+                    return results
             
             # Send messages to each recipient
             for phone_number in recipients:
@@ -416,6 +497,9 @@ class WhatsAppWebService:
             logger.info("WhatsApp Web logged in successfully!")
             time.sleep(5)
             
+            # Create a backup of the successful session
+            self.create_session_backup()
+            
             return True
             
         except Exception as e:
@@ -424,3 +508,154 @@ class WhatsAppWebService:
             
         finally:
             driver.quit()
+    
+    def _recreate_session_automatically(self):
+        """
+        Attempt to recreate WhatsApp Web session automatically by clearing session data
+        and trying to restore from backup if available
+        """
+        try:
+            logger.info("Attempting to recreate WhatsApp Web session...")
+            
+            # Remove existing session data to force fresh start
+            if os.path.exists(self.session_dir):
+                shutil.rmtree(self.session_dir)
+                os.makedirs(self.session_dir, exist_ok=True)
+                logger.info("Cleared existing session data")
+            
+            # Try to restore from backup if it exists
+            backup_dir = os.path.join(settings.BASE_DIR, 'whatsapp_session_backup')
+            if os.path.exists(backup_dir):
+                logger.info("Found session backup, attempting to restore...")
+                shutil.copytree(backup_dir, self.session_dir, dirs_exist_ok=True)
+                
+                # Test if restored session works
+                if self._test_session_validity():
+                    logger.info("Session restored successfully from backup!")
+                    return True
+                else:
+                    logger.warning("Restored session is not valid")
+                    # Clear the invalid session again
+                    shutil.rmtree(self.session_dir)
+                    os.makedirs(self.session_dir, exist_ok=True)
+            
+            # If no backup or backup failed, try to setup fresh session with QR code
+            logger.info("No valid backup found. Opening QR code scanner for fresh setup...")
+            return self._setup_fresh_session_with_qr()
+            
+        except Exception as e:
+            logger.error(f"Failed to recreate session automatically: {str(e)}")
+            return False
+    
+    def _setup_fresh_session_with_qr(self):
+        """
+        Setup a fresh WhatsApp Web session with QR code scanning
+        Similar to setup_session but with shorter timeout for campaign use
+        """
+        try:
+            logger.info("Setting up fresh WhatsApp Web session with QR code...")
+            
+            # Use non-headless mode so user can see the QR code
+            options = webdriver.ChromeOptions()
+            options.add_argument(f'user-data-dir={self.session_dir}')
+            # Remove headless mode for QR code scanning
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--disable-gpu')
+            options.add_argument('--disable-extensions')
+            
+            service = Service(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=options)
+            
+            try:
+                driver.get('https://web.whatsapp.com')
+                
+                print("\n" + "="*60)
+                print("🔄 WHATSAPP SESSION EXPIRED - QR CODE REQUIRED")
+                print("="*60)
+                print("📱 Please scan the QR code in the Chrome window that just opened")
+                print("⏱️  You have 60 seconds to scan the code")
+                print("🔄 The campaign will continue automatically after scanning")
+                print("="*60 + "\n")
+                
+                # Wait for user to scan QR code (shorter timeout for campaigns)
+                WebDriverWait(driver, 60).until(
+                    EC.presence_of_element_located((By.ID, "side"))
+                )
+                
+                logger.info("✅ WhatsApp Web QR code scanned successfully!")
+                print("✅ QR Code scanned successfully! Continuing with campaign...")
+                
+                # Create a backup of the successful session
+                self.create_session_backup()
+                
+                time.sleep(3)  # Brief wait for session to stabilize
+                return True
+                
+            except Exception as e:
+                logger.error(f"❌ QR code scanning failed or timed out: {str(e)}")
+                print(f"❌ QR code scanning failed: {str(e)}")
+                print("💡 Please try running: python manage.py setup_whatsapp --force")
+                return False
+                
+            finally:
+                driver.quit()
+                
+        except Exception as e:
+            logger.error(f"Failed to setup fresh session with QR: {str(e)}")
+            return False
+    
+    def _test_session_validity(self):
+        """
+        Test if the current session is valid by checking if we can access WhatsApp Web
+        """
+        try:
+            options = webdriver.ChromeOptions()
+            options.add_argument(f'user-data-dir={self.session_dir}')
+            options.add_argument('--headless')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            
+            service = Service(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=options)
+            
+            try:
+                driver.get('https://web.whatsapp.com')
+                time.sleep(10)
+                
+                WebDriverWait(driver, 15).until(
+                    EC.presence_of_element_located((By.ID, "side"))
+                )
+                return True
+            except:
+                return False
+            finally:
+                driver.quit()
+                
+        except Exception as e:
+            logger.error(f"Error testing session validity: {str(e)}")
+            return False
+    
+    def create_session_backup(self):
+        """
+        Create a backup of the current session for automatic restoration
+        """
+        try:
+            if not os.path.exists(self.session_dir):
+                logger.warning("No session to backup")
+                return False
+            
+            backup_dir = os.path.join(settings.BASE_DIR, 'whatsapp_session_backup')
+            
+            # Remove existing backup
+            if os.path.exists(backup_dir):
+                shutil.rmtree(backup_dir)
+            
+            # Create new backup
+            shutil.copytree(self.session_dir, backup_dir)
+            logger.info("Session backup created successfully")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to create session backup: {str(e)}")
+            return False

@@ -68,27 +68,49 @@ class CampaignViewSet(viewsets.ModelViewSet):
         from .services import CampaignExecutionService
         execution_service = CampaignExecutionService()
         
+        # Send initial notification
+        self.send_campaign_update(campaign.id, 'running', 'Campaign started - checking WhatsApp Web session...')
+        
         # Execute campaign directly (can be moved to Celery task if needed)
         result = execution_service.execute_campaign(campaign.id, use_whatsapp_web)
         
         if result['success']:
             # Send WebSocket notification
-            self.send_campaign_update(campaign.id, 'completed', 'Campaign completed successfully')
+            results_summary = result.get('results', {})
+            success_count = results_summary.get('successful_sends', 0)
+            failed_count = results_summary.get('failed_sends', 0)
+            
+            message = f'Campaign completed! ✅ {success_count} successful, ❌ {failed_count} failed'
+            self.send_campaign_update(campaign.id, 'completed', message)
             
             return Response({
                 'message': 'Campaign executed successfully',
                 'service_used': result.get('service_used', 'Unknown'),
                 'total_recipients': result.get('total_recipients', 0),
                 'campaign_id': campaign.id,
-                'results': result.get('results', {})
+                'successful_sends': success_count,
+                'failed_sends': failed_count,
+                'results': results_summary
             })
         else:
-            # Send WebSocket notification
-            self.send_campaign_update(campaign.id, 'failed', f'Campaign failed: {result.get("error", "Unknown error")}')
+            # Send WebSocket notification with better error context
+            error_msg = result.get('error', 'Unknown error')
+            
+            # Provide helpful hints for common errors
+            if 'session expired' in error_msg.lower():
+                hint = ' 💡 Tip: The system tried to auto-recreate the session but failed. Please run: python manage.py setup_whatsapp --force'
+            elif 'session not active' in error_msg.lower():
+                hint = ' 💡 Tip: Please setup WhatsApp Web first by running: python manage.py setup_whatsapp'
+            else:
+                hint = ''
+            
+            full_error = f'Campaign failed: {error_msg}{hint}'
+            self.send_campaign_update(campaign.id, 'failed', full_error)
             
             return Response({
-                'error': result.get('error', 'Campaign execution failed'),
-                'campaign_id': campaign.id
+                'error': error_msg,
+                'campaign_id': campaign.id,
+                'hint': hint.strip() if hint else None
             }, status=status.HTTP_400_BAD_REQUEST)
     
     @action(detail=True, methods=['post'])
