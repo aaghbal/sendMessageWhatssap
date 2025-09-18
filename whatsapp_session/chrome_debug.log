@@ -1,0 +1,11 @@
+[574018:574018:0917/225640.195893:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[574064:574064:0917/225640.279177:WARNING:sandbox/policy/linux/sandbox_linux.cc:415] InitializeSandbox() called with multiple threads in process gpu-process.
+[574066:574088:0917/225640.786653:WARNING:net/spdy/spdy_session.cc:3054] Received HEADERS for invalid stream 1
+[574018:574018:0917/225640.832989:INFO:CONSOLE:115] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yN/r/9MwFibMI5lb.js (115)
+[574018:574018:0917/225641.109980:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[574018:574046:0917/225648.487604:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[574018:574018:0917/225653.339653:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[574018:574046:0917/225717.168949:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[574018:574018:0917/225739.253596:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[574066:574090:0917/225802.906306:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:176] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:226 to client_task_runner_.
+[574066:574090:0917/225802.906342:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:176] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:226 to client_task_runner_.
