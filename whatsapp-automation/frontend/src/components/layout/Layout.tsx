@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, 
-  MessageSquare, 
   Send,
   BarChart3,
   Settings,
   Menu,
   X,
   LogOut,
-  User
+  User,
+  MessageCircle
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import Button from '../ui/Button';
@@ -17,7 +17,6 @@ import Button from '../ui/Button';
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
   { name: 'Send Messages', href: '/campaigns', icon: Send },
-  { name: 'Templates', href: '/templates', icon: MessageSquare },
   { name: 'Analytics', href: '/analytics', icon: BarChart3 },
   { name: 'Settings', href: '/settings', icon: Settings },
 ];
@@ -47,7 +46,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex h-16 items-center justify-between px-4">
             <Link to="/dashboard" className="flex items-center">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600">
-                <MessageSquare className="h-5 w-5 text-white" />
+                <MessageCircle className="h-5 w-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-gray-900">WhatsApp Auto</span>
             </Link>
@@ -115,7 +114,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex h-16 items-center px-4">
             <Link to="/dashboard" className="flex items-center">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600">
-                <MessageSquare className="h-5 w-5 text-white" />
+                <MessageCircle className="h-5 w-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-gray-900">WhatsApp Auto</span>
             </Link>

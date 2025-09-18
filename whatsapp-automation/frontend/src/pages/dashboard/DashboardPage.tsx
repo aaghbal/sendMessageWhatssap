@@ -1,7 +1,5 @@
 import React from 'react';
 import { 
-  Users, 
-  MessageSquare, 
   Send, 
   Calendar,
   Activity
@@ -34,20 +32,6 @@ const DashboardPage: React.FC = () => {
   };
 
   const statCards = [
-    {
-      title: 'Total Contacts',
-      value: stats?.total_contacts || 0,
-      icon: Users,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
-    },
-    {
-      title: 'Templates',
-      value: stats?.total_templates || 0,
-      icon: MessageSquare,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100',
-    },
     {
       title: 'Campaigns',
       value: stats?.total_campaigns || 0,

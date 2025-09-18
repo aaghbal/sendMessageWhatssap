@@ -12,6 +12,7 @@ import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/dashboard/DashboardPage';
 import SendMessagePage from './pages/campaigns/SendMessagePage';
+import AnalyticsPage from './pages/analytics/AnalyticsPage';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -71,28 +72,13 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-              <Route
-                path="/templates"
-                element={
-                  <ProtectedRoute>
-                    <Layout>
-                      <div className="text-center py-12">
-                        <h1 className="text-2xl font-bold text-gray-900">Templates</h1>
-                        <p className="text-gray-600">Coming soon...</p>
-                      </div>
-                    </Layout>
-                  </ProtectedRoute>
-                }
-              />
+
               <Route
                 path="/analytics"
                 element={
                   <ProtectedRoute>
                     <Layout>
-                      <div className="text-center py-12">
-                        <h1 className="text-2xl font-bold text-gray-900">Analytics</h1>
-                        <p className="text-gray-600">Coming soon...</p>
-                      </div>
+                      <AnalyticsPage />
                     </Layout>
                   </ProtectedRoute>
                 }

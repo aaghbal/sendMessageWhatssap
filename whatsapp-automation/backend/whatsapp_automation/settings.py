@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'whatsapp_messages',
     'campaigns',
     'dashboard',
+    'analytics',
 ]
 
 MIDDLEWARE = [

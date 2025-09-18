@@ -180,25 +180,7 @@ class ApiService {
     await this.api.delete(`/contact-groups/${id}/`);
   }
 
-  // Message Templates
-  async getTemplates() {
-    const response = await this.api.get('/templates/');
-    return response.data;
-  }
 
-  async createTemplate(data: any) {
-    const response = await this.api.post('/templates/', data);
-    return response.data;
-  }
-
-  async updateTemplate(id: number, data: any) {
-    const response = await this.api.put(`/templates/${id}/`, data);
-    return response.data;
-  }
-
-  async deleteTemplate(id: number) {
-    await this.api.delete(`/templates/${id}/`);
-  }
 
   // Campaigns
   async getCampaigns(page = 1, status = '') {
@@ -252,6 +234,14 @@ class ApiService {
 
   async sendBulkMessages(data: any) {
     const response = await this.api.post('/messages/sent/send_bulk_messages/', data);
+    return response.data;
+  }
+
+  // Analytics
+  async getAnalytics(dateRange = '7days') {
+    const response = await this.api.get('/analytics/', {
+      params: { date_range: dateRange },
+    });
     return response.data;
   }
 }

@@ -26,6 +26,7 @@ urlpatterns = [
     path('api/messages/', include('whatsapp_messages.urls')),
     path('api/campaigns/', include('campaigns.urls')),
     path('api/dashboard/', include('dashboard.urls')),
+    path('api/analytics/', include('analytics.urls')),
     path('accounts/', include('allauth.urls')),
 ]
 
