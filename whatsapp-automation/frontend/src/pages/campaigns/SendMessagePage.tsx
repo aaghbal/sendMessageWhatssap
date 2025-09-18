@@ -172,6 +172,41 @@ const SendMessagePage: React.FC = () => {
       
       console.log('WhatsApp API Response:', result);
       
+      // Process individual results if available
+      if (result.results && Array.isArray(result.results)) {
+        result.results.forEach((messageResult: any, index: number) => {
+          if (messageResult.success) {
+            const successUpdate: ProgressUpdate = {
+              type: 'success',
+              message: `✅ Message sent successfully to ${messageResult.recipient}! [${result.successful_sends}/${result.total_recipients} sent]`,
+              currentPhone: messageResult.recipient,
+              progress: {
+                current: index + 1,
+                total: recipients.length,
+                successful: result.successful_sends || 0,
+                failed: result.failed_sends || 0,
+              },
+              timestamp: new Date().toISOString(),
+            };
+            setProgressUpdates(prev => [...prev, successUpdate]);
+          } else {
+            const errorUpdate: ProgressUpdate = {
+              type: 'error',
+              message: `❌ Failed to send to ${messageResult.recipient}: ${messageResult.error}`,
+              currentPhone: messageResult.recipient,
+              progress: {
+                current: index + 1,
+                total: recipients.length,
+                successful: result.successful_sends || 0,
+                failed: result.failed_sends || 0,
+              },
+              timestamp: new Date().toISOString(),
+            };
+            setProgressUpdates(prev => [...prev, errorUpdate]);
+          }
+        });
+      }
+
       // Update final results
       if (result.success) {
         const finalUpdate: ProgressUpdate = {
@@ -249,41 +284,24 @@ const SendMessagePage: React.FC = () => {
       setProgressUpdates(prev => [...prev, startingUpdate]);
     }, 1000);
 
-    // Simulate sending to each recipient with delays
+    // Only show preparation messages, not success until backend confirms
     recipients.forEach((recipient, index) => {
-      const delay = 2000 + (index * 1500); // Stagger the updates
+      const delay = 1000 + (index * 500); // Shorter delays for preparation only
       
       setTimeout(() => {
-        const sendingUpdate: ProgressUpdate = {
+        const preparingUpdate: ProgressUpdate = {
           type: 'sending',
-          message: `📱 [${index + 1}/${recipients.length}] Sending to: ${recipient}`,
+          message: `📱 [${index + 1}/${recipients.length}] Preparing to send to: ${recipient}`,
           currentPhone: recipient,
           progress: {
-            current: index + 1,
+            current: index,
             total: recipients.length,
-            successful: index, // Simulate most being successful
-            failed: Math.floor(index * 0.1), // Simulate some failures
+            successful: 0, // Don't show success until confirmed
+            failed: 0,
           },
           timestamp: new Date().toISOString(),
         };
-        setProgressUpdates(prev => [...prev, sendingUpdate]);
-
-        // Add success update shortly after
-        setTimeout(() => {
-          const successUpdate: ProgressUpdate = {
-            type: 'success',
-            message: `✅ Message sent successfully! [${index + 1}/${recipients.length} sent]`,
-            currentPhone: recipient,
-            progress: {
-              current: index + 1,
-              total: recipients.length,
-              successful: index + 1,
-              failed: Math.floor(index * 0.1),
-            },
-            timestamp: new Date().toISOString(),
-          };
-          setProgressUpdates(prev => [...prev, successUpdate]);
-        }, 800);
+        setProgressUpdates(prev => [...prev, preparingUpdate]);
       }, delay);
     });
   };

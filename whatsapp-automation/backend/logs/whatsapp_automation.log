@@ -17695,3 +17695,784 @@ Not Found: /socket.io/
 - Broken pipe from ('127.0.0.1', 49452)
 Not Found: /socket.io/
 "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49462)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 50974)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 50986)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 51002)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 51024)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44262)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44266)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 43744)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 43766)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 43792)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42892)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42908)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42920)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55680)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55688)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55718)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55734)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 58920)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 58934)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49404)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49414)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55090)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55108)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 59492)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 59502)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 59518)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40448)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40456)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40466)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53210)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53242)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53252)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49300)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49302)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49320)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39528)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39558)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39562)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39572)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36302)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36316)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56618)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56628)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56644)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56672)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56694)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56698)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41352)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41358)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41368)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42170)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42176)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42190)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42198)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42208)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 47268)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 47270)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41320)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41330)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41334)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48402)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48406)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48410)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48424)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44524)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44546)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41880)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56058)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56070)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56082)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56106)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48346)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48350)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48362)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35722)
+Starting bulk message sending to 1 recipients
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35730)
+Get LATEST chromedriver version for google-chrome
+Driver [/home/abdo/.wdm/drivers/chromedriver/linux64/138.0.7204.183/chromedriver-linux64/chromedriver] found in cache
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35736)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35738)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35744)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35692)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35702)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35718)
+WhatsApp Web session is active for bulk sending
+Sending message to +212643992808...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35732)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40570)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40576)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40584)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44042)
+✓ Message sent to +212643992808
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44046)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 44054)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Bulk message sending completed. Success: 1/1
+"POST /api/messages/sent/send_bulk_messages/ HTTP/1.1" 201 214
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57596)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57598)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57614)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57624)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 52172)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 52174)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 52190)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 52204)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39612)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 39622)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41958)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41974)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41978)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 42354)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41194)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41210)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48292)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48332)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48348)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48156)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48168)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48198)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48200)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57154)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57158)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57170)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57180)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 57192)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49184)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49200)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49832)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Starting bulk message sending to 5 recipients
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/home/abdo/.wdm/drivers/chromedriver/linux64/138.0.7204.183/chromedriver-linux64/chromedriver] found in cache
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49846)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 49860)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 43214)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 43254)
+WhatsApp Web session is active for bulk sending
+Sending message to ++212643992808...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 58400)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 58416)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 58422)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56412)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56422)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+✓ Message sent to ++212643992808
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56450)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 56456)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Sending message to ++212726982582...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 33888)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 33898)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 33918)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53806)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53814)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53824)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 53828)
+✓ Message sent to ++212726982582
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 32862)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 32874)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 32876)
+Sending message to ++212615585742...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35200)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35216)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40842)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40856)
+✓ Message sent to ++212615585742
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40858)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 40860)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Sending message to ++212624555810...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 47652)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 47682)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35226)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35242)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35246)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 35276)
+✓ Message sent to ++212624555810
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41558)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41560)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41580)
+Sending message to ++212650926095...
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41588)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41598)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 33148)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 33158)
+✓ Message sent to ++212650926095
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41338)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41352)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41364)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 41372)
+Bulk message sending completed. Success: 5/5
+"POST /api/messages/sent/send_bulk_messages/ HTTP/1.1" 201 727
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55192)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55206)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 55216)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36968)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36970)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36982)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 36998)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 37004)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48748)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 48762)
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+Not Found: /socket.io/
+"GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 3579
+- Broken pipe from ('127.0.0.1', 45180)
