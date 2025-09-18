@@ -12,7 +12,7 @@ import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/dashboard/DashboardPage';
 import SendMessagePage from './pages/campaigns/SendMessagePage';
-import AnalyticsPage from './pages/analytics/AnalyticsPage';
+
 
 // Create a client
 const queryClient = new QueryClient({
@@ -73,16 +73,7 @@ function App() {
                 }
               />
 
-              <Route
-                path="/analytics"
-                element={
-                  <ProtectedRoute>
-                    <Layout>
-                      <AnalyticsPage />
-                    </Layout>
-                  </ProtectedRoute>
-                }
-              />
+
               <Route
                 path="/settings"
                 element={
