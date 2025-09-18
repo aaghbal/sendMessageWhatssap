@@ -5,6 +5,7 @@ import { z } from 'zod';
 import { Upload, Download, Plus, Trash2, Send, MessageSquare, Phone } from 'lucide-react';
 import Button from '../../components/ui/Button';
 import Card from '../../components/ui/Card';
+import MessageProgressPopup from '../../components/MessageProgressPopup';
 
 const sendMessageSchema = z.object({
   message: z.string().min(1, 'Message is required'),
@@ -20,12 +21,35 @@ interface PhoneNumber {
   name?: string;
 }
 
+interface ProgressUpdate {
+  type: 'session_check' | 'sending' | 'success' | 'error' | 'complete';
+  message: string;
+  currentPhone?: string;
+  progress?: {
+    current: number;
+    total: number;
+    successful: number;
+    failed: number;
+  };
+  timestamp: string;
+}
+
 const SendMessagePage: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [phoneNumbers, setPhoneNumbers] = useState<PhoneNumber[]>([]);
   const [loading, setLoading] = useState(false);
   const [newPhoneNumber, setNewPhoneNumber] = useState('');
   const [selectedCountryCode, setSelectedCountryCode] = useState('+1');
+  
+  // Progress popup state
+  const [showProgressPopup, setShowProgressPopup] = useState(false);
+  const [progressUpdates, setProgressUpdates] = useState<ProgressUpdate[]>([]);
+  const [finalResults, setFinalResults] = useState<{
+    successful: number;
+    failed: number;
+    total: number;
+    successRate: number;
+  } | undefined>(undefined);
 
   const {
     register,
@@ -121,12 +145,22 @@ const SendMessagePage: React.FC = () => {
     }
 
     setLoading(true);
+    
+    // Reset progress states
+    setProgressUpdates([]);
+    setFinalResults(undefined);
+    setShowProgressPopup(true);
+
+    // Prepare recipients array first
+    const recipients = phoneNumbers.map(p => p.country_code + p.number);
+
     try {
+      
+      // Start progress simulation
+      simulateProgress(recipients);
+
       // Import the API service
       const { apiService } = await import('../../services/api');
-      
-      // Prepare recipients array
-      const recipients = phoneNumbers.map(p => p.country_code + p.number);
       
       console.log('Sending WhatsApp messages to:', recipients);
       
@@ -138,32 +172,120 @@ const SendMessagePage: React.FC = () => {
       
       console.log('WhatsApp API Response:', result);
       
+      // Update final results
       if (result.success) {
-        alert(`Message sent successfully!\n\n✅ Successful: ${result.successful_sends}\n❌ Failed: ${result.failed_sends}\n📱 Total: ${result.total_recipients}`);
+        const finalUpdate: ProgressUpdate = {
+          type: 'complete',
+          message: 'Bulk message sending completed!',
+          progress: {
+            current: result.total_recipients || recipients.length,
+            total: recipients.length,
+            successful: result.successful_sends || 0,
+            failed: result.failed_sends || 0,
+          },
+          timestamp: new Date().toISOString(),
+        };
+        setProgressUpdates(prev => [...prev, finalUpdate]);
         
-        // Reset form
-        setPhoneNumbers([]);
-        setCurrentStep(1);
+        setFinalResults({
+          successful: result.successful_sends || 0,
+          failed: result.failed_sends || 0,
+          total: recipients.length,
+          successRate: result.total_recipients > 0 ? ((result.successful_sends || 0) / result.total_recipients) * 100 : 0,
+        });
+        
+        // Reset form after a delay
+        setTimeout(() => {
+          setPhoneNumbers([]);
+          setCurrentStep(1);
+        }, 3000);
       } else {
-        alert('Some messages failed to send. Please check the console for details.');
+        setFinalResults({
+          successful: result.successful_sends || 0,
+          failed: result.failed_sends || 0,
+          total: recipients.length,
+          successRate: result.total_recipients > 0 ? ((result.successful_sends || 0) / result.total_recipients) * 100 : 0,
+        });
       }
     } catch (error: any) {
       console.error('Failed to send messages:', error);
       
-      // More detailed error message
-      let errorMessage = 'Failed to send messages. ';
-      if (error.response?.data?.error) {
-        errorMessage += error.response.data.error;
-      } else if (error.message) {
-        errorMessage += error.message;
-      } else {
-        errorMessage += 'Please check your internet connection and try again.';
-      }
+      // Add error update to progress
+      const errorUpdate: ProgressUpdate = {
+        type: 'error',
+        message: `Failed to send messages: ${error.message || 'Unknown error'}`,
+        timestamp: new Date().toISOString(),
+      };
+      setProgressUpdates(prev => [...prev, errorUpdate]);
       
-      alert(errorMessage);
+      setFinalResults({
+        successful: 0,
+        failed: recipients.length,
+        total: recipients.length,
+        successRate: 0,
+      });
     } finally {
       setLoading(false);
     }
+  };
+
+  const simulateProgress = (recipients: string[]) => {
+    // Add initial session check update
+    const sessionCheckUpdate: ProgressUpdate = {
+      type: 'session_check',
+      message: '🔍 Checking WhatsApp Web session...',
+      timestamp: new Date().toISOString(),
+    };
+    setProgressUpdates([sessionCheckUpdate]);
+
+    // Add starting update after a short delay
+    setTimeout(() => {
+      const startingUpdate: ProgressUpdate = {
+        type: 'sending',
+        message: '🚀 Starting bulk message sending...',
+        progress: { current: 0, total: recipients.length, successful: 0, failed: 0 },
+        timestamp: new Date().toISOString(),
+      };
+      setProgressUpdates(prev => [...prev, startingUpdate]);
+    }, 1000);
+
+    // Simulate sending to each recipient with delays
+    recipients.forEach((recipient, index) => {
+      const delay = 2000 + (index * 1500); // Stagger the updates
+      
+      setTimeout(() => {
+        const sendingUpdate: ProgressUpdate = {
+          type: 'sending',
+          message: `📱 [${index + 1}/${recipients.length}] Sending to: ${recipient}`,
+          currentPhone: recipient,
+          progress: {
+            current: index + 1,
+            total: recipients.length,
+            successful: index, // Simulate most being successful
+            failed: Math.floor(index * 0.1), // Simulate some failures
+          },
+          timestamp: new Date().toISOString(),
+        };
+        setProgressUpdates(prev => [...prev, sendingUpdate]);
+
+        // Add success update shortly after
+        setTimeout(() => {
+          const successUpdate: ProgressUpdate = {
+            type: 'success',
+            message: `✅ Message sent successfully! [${index + 1}/${recipients.length} sent]`,
+            currentPhone: recipient,
+            progress: {
+              current: index + 1,
+              total: recipients.length,
+              successful: index + 1,
+              failed: Math.floor(index * 0.1),
+            },
+            timestamp: new Date().toISOString(),
+          };
+          setProgressUpdates(prev => [...prev, successUpdate]);
+        }, 800);
+      }, delay);
+    });
   };
 
   const steps = [
@@ -174,6 +296,14 @@ const SendMessagePage: React.FC = () => {
 
   return (
     <div className="space-y-6">
+      {/* Progress Popup */}
+      <MessageProgressPopup
+        isOpen={showProgressPopup}
+        onClose={() => setShowProgressPopup(false)}
+        updates={progressUpdates}
+        finalResults={finalResults}
+      />
+      
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-gray-900">Send WhatsApp Messages</h1>

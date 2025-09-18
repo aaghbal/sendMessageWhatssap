@@ -1,8 +1,14 @@
-[824963:824963:0918/165144.042643:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
-[824997:824997:0918/165144.099920:WARNING:sandbox/policy/linux/sandbox_linux.cc:415] InitializeSandbox() called with multiple threads in process gpu-process.
-[824963:824963:0918/165144.189379:INFO:CONSOLE:31] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome://resources/roboto/roboto-regular.woff2", source: chrome://new-tab-page/ (31)
-[824963:824963:0918/165144.716579:INFO:CONSOLE:115] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yp/r/KTri5RY9eXJ.js (115)
-[824963:824963:0918/165144.766790:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[824963:824981:0918/165147.628454:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
-[824963:824963:0918/165155.716198:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[824963:824981:0918/165210.276717:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[844083:844083:0918/170706.046546:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[844119:844119:0918/170706.109863:WARNING:sandbox/policy/linux/sandbox_linux.cc:415] InitializeSandbox() called with multiple threads in process gpu-process.
+[844083:844083:0918/170706.678084:INFO:CONSOLE:115] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yp/r/KTri5RY9eXJ.js (115)
+[844083:844083:0918/170706.758510:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844083:844083:0918/170717.378963:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844083:844101:0918/170719.728293:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[844083:844101:0918/170741.817868:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[844083:844083:0918/170743.622632:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844083:844083:0918/170807.322674:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844083:844101:0918/170826.711920:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[844083:844083:0918/170831.332962:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844083:844083:0918/170855.284100:INFO:CONSOLE:0] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[844121:844141:0918/170918.693426:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:176] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:226 to client_task_runner_.
+[844121:844141:0918/170918.693500:WARNING:net/extras/sqlite/sqlite_persistent_store_backend_base.cc:176] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:226 to client_task_runner_.

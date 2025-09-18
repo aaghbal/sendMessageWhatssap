@@ -1,3 +1,5 @@
-2025/09/18-16:51:44.070 c96ac Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Local Storage/leveldb/MANIFEST-000001
-2025/09/18-16:51:44.076 c96ac Recovering log #3
-2025/09/18-16:51:44.076 c96ac Reusing old log /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Local Storage/leveldb/000003.log 
+2025/09/18-17:07:06.075 ce160 Reusing MANIFEST /home/abdo/Desktop/sendMessageWhatssap/whatsapp-automation/backend/whatsapp_session/Default/Local Storage/leveldb/MANIFEST-000001
+2025/09/18-17:07:06.079 ce160 Recovering log #3
+2025/09/18-17:07:06.079 ce160 Level-0 table #3: started
+2025/09/18-17:07:06.081 ce160 Level-0 table #3: 19394 bytes OK
+2025/09/18-17:07:06.083 ce160 Delete type=0 #3
